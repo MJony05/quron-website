@@ -4,16 +4,40 @@
   box-sizing: border-box;
 }
 body {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  padding-top: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  padding: 2rem;
   font-family: "Anek Tamil", sans-serif;
+  gap: 4rem;
+}
+
+.heading {
+  text-align: center;
+}
+.desc {
+  flex-grow: 1;
+  padding: 2rem;
+}
+.hidden {
+  display: none;
+}
+.arabic-text {
+  text-align: right;
+  font-size: 1.5rem;
 }
 .container {
+  grid-column: 2/3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   gap: 1rem;
+}
+.click {
+  margin: 0;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 1rem 0;
 }
 .item {
   display: flex;

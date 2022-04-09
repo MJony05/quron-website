@@ -1,4 +1,5 @@
 let box = document.querySelector(".container");
+let more = document.querySelector(".desc");
 fetch("https://api.quran.sutanlab.id/surah")
   .then((res) => res.json())
   .then((res) => {
@@ -21,6 +22,8 @@ fetch("https://api.quran.sutanlab.id/surah")
 box.addEventListener("click", function (e) {
   if (!e.target.classList.contains("container")) {
     console.log(e.target.closest(".card").id);
-    box.style.gridTemplateColumns = "1fr";
+    box.classList.add("click");
+    more.classList.remove("hidden");
+    document.body.style.padding = "0 2rem";
   }
 });
