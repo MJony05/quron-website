@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  padding-top: 2rem;
+  font-family: "Anek Tamil", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+.num {
+  width: 40px;
+  height: 40px;
+  background-color: #f0efef;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+}
+.name {
+  font-weight: 500;
+}
+.number {
+  transform: rotate(-45deg);
+}
+.arabic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+.ayahs {
+  font-size: 13px;
+}
+.card:hover {
+  border-color: #2ca4ab;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+.card:hover .num {
+  background-color: #2ca4ab;
+}
