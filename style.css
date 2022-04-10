@@ -87,6 +87,7 @@ p::selection {
   gap: 1rem;
   margin-top: 15vh;
   background-color: #fff;
+  /* z-index: -; */
 }
 .click {
   margin: 0;
@@ -146,7 +147,7 @@ p::selection {
 @media (max-width: 500px) {
   .container {
     grid-template-columns: 1fr;
-    width: 90%;
+    /* width: 90%; */
   }
   .desc {
     height: 100%;
@@ -214,6 +215,6 @@ body {
   top: 50%;
   left: 50%;
   margin: 0 auto;
-  z-index: 1;
-  transform: translate(-60%, -50%);
+  z-index: -1;
+  transform: translate(-50%, -50%);
 }

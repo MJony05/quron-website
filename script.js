@@ -25,6 +25,9 @@ fetch("https://api.quran.sutanlab.id/surah")
     </div>`;
       box.insertAdjacentHTML("beforeend", item);
     });
+  })
+  .finally(() => {
+    document.querySelector(".gif").style.opacity = "0";
   });
 let getText = async function (id) {
   await fetch(`https://api.quran.sutanlab.id/surah/${id}`)
