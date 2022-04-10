@@ -109,8 +109,9 @@ p::selection {
     justify-content: flex-start;
   }
   .desc {
-    width: 94vw;
+    width: 100%;
     margin-top: 0;
+    padding: 1rem;
   }
   .audio-player {
     width: 100%;

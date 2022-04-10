@@ -51,7 +51,6 @@ box.addEventListener("click", async function (e) {
   id = e.target.closest(".card").id;
   box.classList.add("click");
   more.classList.remove("hidden");
-  document.body.style.paddingLeft = "2rem";
 
   // console.log(e.target.textContent);
   await getUzText(id);
