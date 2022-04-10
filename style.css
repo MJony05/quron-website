@@ -136,6 +136,7 @@ p::selection {
   border-radius: 50%;
   border: none;
   font-size: 1rem;
+  z-index: 111111111;
 }
 @media (max-width: 500px) {
   .container {
