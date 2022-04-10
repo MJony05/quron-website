@@ -210,11 +210,12 @@ body {
 .card:hover .num {
   background-color: #2ca4ab;
 }
-.gif {
+.gif,
+.gif_text {
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0 auto;
   z-index: -1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
 }
