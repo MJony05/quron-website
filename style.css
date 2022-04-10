@@ -124,6 +124,7 @@ p::selection {
     width: 100%;
   }
 }
+
 .form {
   position: absolute;
 }
@@ -137,6 +138,12 @@ p::selection {
   border: none;
   font-size: 1rem;
   z-index: 111111111;
+  display: none;
+}
+@media (max-width: 600px) {
+  .close {
+    display: block;
+  }
 }
 @media (max-width: 500px) {
   .container {
