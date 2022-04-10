@@ -58,6 +58,7 @@ p::selection {
   overflow-y: auto;
   height: 84vh;
   margin-top: 5rem;
+  background-color: white;
 }
 .desc-item {
   border-bottom: 1px solid black;
@@ -84,6 +85,7 @@ p::selection {
   margin: 1rem auto;
   gap: 1rem;
   margin-top: 15vh;
+  background-color: #fff;
 }
 .click {
   margin: 0;
@@ -157,6 +159,9 @@ p::selection {
   border: 1px solid #ebebeb;
   border-radius: 5px;
 }
+body {
+  height: 100vh;
+}
 .num {
   width: 40px;
   height: 40px;
@@ -189,4 +194,14 @@ p::selection {
 }
 .card:hover .num {
   background-color: #2ca4ab;
+}
+.gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: 0 auto;
+  font-size: 1.3rem;
+  z-index: -1;
+  transform: translate(-50%, -50%);
 }
