@@ -132,6 +132,7 @@ p::selection {
   padding: 1rem;
   border-radius: 50%;
   border: none;
+  font-size: 1rem;
 }
 @media (max-width: 500px) {
   .container {
@@ -199,9 +200,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
   margin: 0 auto;
-  font-size: 1.3rem;
-  z-index: -1;
-  transform: translate(-50%, -50%);
+  z-index: 1;
+  transform: translate(-60%, -50%);
 }

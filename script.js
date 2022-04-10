@@ -42,6 +42,7 @@ box.addEventListener("click", async function (e) {
   arabText = [];
   oqilishi = [];
   audio = [];
+  cont.innerHTML = "";
   let parent = e.target.closest(".card");
   if (!parent) return;
   let text = parent.querySelector(".name").textContent;
@@ -56,7 +57,7 @@ box.addEventListener("click", async function (e) {
   // console.log(e.target.textContent);
   await getUzText(id);
   await getText(id);
-  cont.innerHTML = "";
+
   for (let i = 0; i < uzbekText.length; i++) {
     render(arabText[i], uzbekText[i], oqilishi[i], audio[i]);
   }
