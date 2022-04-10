@@ -5,11 +5,39 @@
 }
 body {
   display: flex;
-  padding-left: 2rem;
   justify-content: space-between;
   font-family: "Anek Tamil", sans-serif;
   gap: 2rem;
+  position: relative;
   /* overflow-y: hidden; */
+}
+nav {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5rem;
+  background-color: #f0f0f0;
+  z-index: 1;
+  margin-left: 1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+.logo img {
+  width: 80px;
+  border-radius: 100%;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.1rem;
 }
 p::selection {
   background-color: #2ca4ab;
@@ -25,10 +53,11 @@ p::selection {
   text-align: center;
 }
 .desc {
-  flex-grow: 1;
+  width: 80vw;
   padding: 2rem;
   overflow-y: auto;
-  height: 100vh;
+  height: 84vh;
+  margin-top: 5rem;
 }
 .desc-item {
   border-bottom: 1px solid black;
@@ -37,7 +66,7 @@ p::selection {
   flex-direction: column;
   justify-content: space-between;
 
-  width: 850px;
+  width: 100%;
   /* border: 1px solid #2ca4ab; */
 }
 .hidden {
@@ -54,13 +83,44 @@ p::selection {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 1rem auto;
   gap: 1rem;
+  margin-top: 15vh;
 }
 .click {
   margin: 0;
   grid-template-columns: 1fr;
-  height: 100vh;
+  height: 84vh;
   overflow-y: scroll;
   padding: 1rem 0;
+  margin-top: 5rem;
+}
+@media (max-width: 600px) {
+  .click {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body {
+    justify-content: flex-start;
+  }
+  .desc {
+    width: 94vw;
+    margin-top: 0;
+  }
+  .audio-player {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
 }
 .item {
   display: flex;
@@ -75,7 +135,7 @@ p::selection {
   padding: 20px;
   gap: 20px;
   align-items: center;
-  width: 300px;
+  width: 100%;
   border: 1px solid #ebebeb;
   border-radius: 5px;
 }
