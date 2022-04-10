@@ -73,9 +73,7 @@ p::selection {
   z-index: 1112;
   /* border: 1px solid #2ca4ab; */
 }
-.hidden {
-  display: none;
-}
+
 .arabic-text {
   text-align: right;
   font-size: 2rem;
@@ -161,6 +159,9 @@ p::selection {
   justify-content: center;
   gap: 1rem;
   z-index: 111;
+}
+.hidden {
+  display: none;
 }
 .card {
   display: flex;
