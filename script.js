@@ -51,11 +51,11 @@ box.addEventListener("click", async function (e) {
   id = e.target.closest(".card").id;
   box.classList.add("click");
   more.classList.remove("hidden");
+  document.querySelector(".close").classList.remove("hidden");
 
   // console.log(e.target.textContent);
   await getUzText(id);
   await getText(id);
-  console.log(audio);
   cont.innerHTML = "";
   for (let i = 0; i < uzbekText.length; i++) {
     render(arabText[i], uzbekText[i], oqilishi[i], audio[i]);

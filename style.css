@@ -107,6 +107,7 @@ p::selection {
   }
   body {
     justify-content: flex-start;
+    gap: 0;
   }
   .desc {
     width: 100%;
@@ -117,6 +118,18 @@ p::selection {
   .audio-player {
     width: 100%;
   }
+}
+.form {
+  position: absolute;
+}
+.close {
+  position: fixed;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
 }
 @media (max-width: 500px) {
   .container {
